@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- Primary Meta -->
+    <title>ClothBuddy — AI Personal Stylist</title>
+    <meta name="description" content="Your AI personal stylist and digital wardrobe. Powered by Claude." />
+    <meta name="keywords" content="fashion, AI stylist, wardrobe, outfit, clothing" />
+    <meta name="author" content="ClothBuddy" />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0F0D0B" />
+    <meta name="background-color" content="#0F0D0B" />
+
+    <!-- PWA / Standalone -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="ClothBuddy" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Apple Splash Screens (iOS) -->
+    <link rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)"
+      href="/splash/iphone14promax.png" />
+    <link rel="apple-touch-startup-image"
+      media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3)"
+      href="/splash/iphone14pro.png" />
+    <link rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)"
+      href="/splash/iphone14.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ClothBuddy — AI Personal Stylist" />
+    <meta property="og:description" content="Your AI personal stylist and digital wardrobe. Powered by Claude." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Prevent iOS tap highlight -->
+    <style>
+      * { -webkit-tap-highlight-color: transparent; }
+      html, body { height: 100%; overflow: hidden; }
+      body {
+        margin: 0;
+        background: #0F0D0B;
+        /* Safe area insets for notch/Dynamic Island */
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      #root { height: 100%; overflow-y: auto; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

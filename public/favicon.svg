@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="120" fill="#0F0D0B"/>
+  <!-- Hanger shape -->
+  <path d="M256 140 C256 140 256 160 256 172 C200 172 120 220 100 280 C90 310 110 330 130 330 L382 330 C402 330 422 310 412 280 C392 220 312 172 256 172" stroke="#C9956A" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Hanger hook -->
+  <path d="M256 140 C256 120 270 108 284 112 C298 116 304 130 296 142" stroke="#C9956A" stroke-width="22" stroke-linecap="round" fill="none"/>
+  <!-- Sparkle -->
+  <circle cx="370" cy="190" r="8" fill="#D4AF6E"/>
+  <circle cx="390" cy="170" r="5" fill="#D4AF6E" opacity="0.6"/>
+  <circle cx="355" cy="168" r="4" fill="#D4AF6E" opacity="0.4"/>
+</svg>
