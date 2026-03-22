@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://clothbuddy-api.railway.app/api/:path*"
+    "destination": "https://clothbuddyclaude-production.up.railway.app/api/:path*"
     },
     {
       "source": "/((?!api/).*)",
