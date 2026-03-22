@@ -39,7 +39,7 @@ async function askClaude(system, userText, maxTokens = 800) {
 }
 
 async function streamClaude(messages, system, onChunk) {
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+  const res = await fetch("/api/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -422,7 +422,7 @@ Return ONLY a valid JSON array. No markdown, no explanation:
     setScanSource(detectPlatform(u));
     try {
       // Fetch the page and extract readable text via Claude
-      const pageRes = await fetch("https://api.anthropic.com/v1/messages", {
+      const pageRes = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -475,7 +475,7 @@ Be creative but realistic — imagine a typical outfit post from this platform.`
     setScanning(true); setScanError(null); setScanResults(null);
     setScanSource("Uploaded image");
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
